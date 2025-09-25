@@ -11,7 +11,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 - **Automation Tool:** Selenium WebDriver  
 - **Testing Framework:** TestNG  
 - **Build Tool:** Maven  
-- **Design Pattern:** Page Object Model (POM)  
+- **Design Pattern:** Page Object Model (POM), Factory  
 - **Driver Management:** WebDriverManager  
 
 ---
@@ -65,7 +65,7 @@ Login Test: Verifies invalid login scenarios using different sets of credentials
 ---
 ## 📈 Future Improvements
 - Add HTML/Allure reports for better test reporting
-- Implement CI/CD pipelines with GitHub Actions or Jenkins
+- Implement CI/CD pipelines with Jenkins
 - Enable data-driven testing using Excel/CSV
 - Support parallel test execution to improve efficiency
 
