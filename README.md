@@ -38,6 +38,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 │ └── test/
 │ └── java/
 │ └── com/tests/home # home page tests
+│ └── com/tests/register # register page tests
 ├── pom.xml # Maven build file
 ├── TEST_CASES.md # Test cases already automated
 └── README.md # Project documentation
