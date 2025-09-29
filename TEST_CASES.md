@@ -25,8 +25,8 @@
 | TC_Reg_10      | Verify partially filled form submission displays errors| RegisterMandatoryFieldsTest | ✅ Automated | High     | Negative test case            |
 | TC_Reg_11      | Verify passwords mismatch shows errors                | RegisterMandatoryFieldsTest  | ✅ Automated | High     | Validation check              |
 | TC_Reg_12      | Verify incorrect email format shows error             | RegisterValidationsTest      | ✅ Automated | Medium   | Validation check              |
-| TC_Reg_12      | Verify existing email shows error                     | RegisterValidationsTest      | ✅ Automated | High     | Validation check              |
-| TC_Reg_12      | Verify password too short shows error                 | RegisterValidationsTest      | ✅ Automated | Medium   | Password validation check     |
-| TC_Reg_12      | Verify successful user registration flow              | RegisterSuccessfulTest       | ✅ Automated | High     | End-to-end positive scenario  |
+| TC_Reg_13      | Verify existing email shows error                     | RegisterValidationsTest      | ✅ Automated | High     | Validation check              |
+| TC_Reg_14      | Verify password too short shows error                 | RegisterValidationsTest      | ✅ Automated | Medium   | Password validation check     |
+| TC_Reg_15      | Verify successful user registration flow              | RegisterSuccessfulTest       | ✅ Automated | High     | End-to-end positive scenario  |
 
 
