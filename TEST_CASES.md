@@ -28,5 +28,12 @@
 | TC_Reg_13      | Verify existing email shows error                     | RegisterValidationsTest      | ✅ Automated | High     | Validation check              |
 | TC_Reg_14      | Verify password too short shows error                 | RegisterValidationsTest      | ✅ Automated | Medium   | Password validation check     |
 | TC_Reg_15      | Verify successful user registration flow              | RegisterSuccessfulTest       | ✅ Automated | High     | End-to-end positive scenario  |
+| TC_Login_01    | Verify login page is loaded successfully              | LoginPageElementsTest        | ✅ Automated | High     | Page load validation          |
+| TC_Login_02    | Verify register block is displayed                    | LoginPageElementsTest        | ✅ Automated | High     | Mandatory input fields block  |
+| TC_Login_03    | Verify email field is displayed                       | LoginPageElementsTest        | ✅ Automated | High     | Mandatory input fields        |
+| TC_Login_04    | Verify password field is displayed                    | LoginPageElementsTest        | ✅ Automated | High     | Mandatory input fields        |
+| TC_Login_05    | Verify remember me field is displayed                 | LoginPageElementsTest        | ✅ Automated | Medium   | Mandatory input fields        |
+| TC_Login_06    | Verify forgot password is displayed                   | LoginPageElementsTest        | ✅ Automated | Medium   | Mandatory input fields        |
+| TC_Login_07    | Verify login button is displayed                      | LoginPageElementsTest        | ✅ Automated | High     | Call-to-action button check   |
 
 
