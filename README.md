@@ -39,6 +39,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 │ └── java/
 │ └── com/tests/home # home page tests
 │ └── com/tests/register # register page tests
+│ └── com/tests/login # login page tests
 ├── pom.xml # Maven build file
 ├── TEST_CASES.md # Test cases already automated
 └── README.md # Project documentation
@@ -62,6 +63,15 @@ mvn test
 ## ✅ Sample Test Case
 
 Login Test: Verifies invalid login scenarios using different sets of credentials.
+
+---
+
+## 🛠️ Challenges Faced  
+I encountered the following challenges while designing and implementing this automation framework,
+
+### 1. Test Lifecycle and State Management 
+- **Problem:** Individual test classes were not isolated; execution order left the browser in inconsistent states (e.g., a login test would leave the session active for the next test).  
+- **Resolution:** Implemented a `BaseTest` class to centralize WebDriver initialization and teardown, and introduced `@BeforeMethod` / `@AfterMethod` hooks to guarantee that each test starts from a clean application state while navigating to its corresponding page.  
 
 ---
 ## 📈 Future Improvements
