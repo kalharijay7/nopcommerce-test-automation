@@ -16,8 +16,6 @@ public class BaseTest {
 		driver = BrowserFactory.getDriver(ConfigReader.getConfig("browser"));
 		
 		driver.manage().window().maximize();
-		
-		driver.get("https://demo.nopcommerce.com/");
 	}
 	
 	@AfterTest

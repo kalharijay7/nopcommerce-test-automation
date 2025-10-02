@@ -7,15 +7,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.base.BaseTest;
 
 public class RegisterSuccessfulTest extends BaseTest {
+	
+	@BeforeMethod
+	public void navigateToRegisterPage() {
+		
+		driver.get("https://demo.nopcommerce.com/register");
+	}
 
 	@Test
 	public void verifySuccessfulRegistrationFlow() {
 		
-		driver.get("https://demo.nopcommerce.com/register");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		
 		String uniqueEmail = "user"+ System.currentTimeMillis() + "@mail.com";
