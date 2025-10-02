@@ -71,7 +71,10 @@ I encountered the following challenges while designing and implementing this aut
 
 ### 1. Test Lifecycle and State Management 
 - **Problem:** Individual test classes were not isolated; execution order left the browser in inconsistent states (e.g., a login test would leave the session active for the next test).  
-- **Resolution:** Implemented a `BaseTest` class to centralize WebDriver initialization and teardown, and introduced `@BeforeMethod` / `@AfterMethod` hooks to guarantee that each test starts from a clean application state while navigating to its corresponding page.  
+- **Resolution:** Implemented a `BaseTest` class to centralize WebDriver initialization and teardown, and introduced `@BeforeMethod` / `@AfterMethod` hooks to guarantee that each test starts from a clean application state while navigating to its corresponding page.
+### 2. Manage dependencies between the tests 
+- **Problem:** Tests might have dependencies (e.g. a new user should be registered with a known user email and password to execute the successful login test ). Managing them in an efficient way is a must to ensure a smooth test suite run at the end.
+- **Resolution:** Avoided test dependencies by adding additional flows which executed first with @BeforeMethod hook, so that the tests can run in parallel in CI/CD much faster, more reliably and less flaky. There is no need to worry about the order of test execution or about the data they need, as they are self-contained.
 
 ---
 ## 📈 Future Improvements
