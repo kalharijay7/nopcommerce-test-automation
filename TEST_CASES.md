@@ -35,5 +35,11 @@
 | TC_Login_05    | Verify remember me field is displayed                 | LoginPageElementsTest        | ✅ Automated | Medium   | Mandatory input fields        |
 | TC_Login_06    | Verify forgot password is displayed                   | LoginPageElementsTest        | ✅ Automated | Medium   | Mandatory input fields        |
 | TC_Login_07    | Verify login button is displayed                      | LoginPageElementsTest        | ✅ Automated | High     | Call-to-action button check   |
+| TC_Login_08    | Verify empty form submission displays errors          | LoginPageValidationsTest     | ✅ Automated | High     | Negative test case            |
+| TC_Login_09    | Verify empty password form submission displays errors | LoginPageValidationsTest     | ✅ Automated | High     | Negative test case            |
+| TC_Login_10    | Verify empty email form submission displays errors    | LoginPageValidationsTest     | ✅ Automated | High     | Negative test case            |
+| TC_Login_11    | Verify clicking password toggle changes password type | LoginPageValidationsTest     | ✅ Automated | Medium   | Button functionality check    |
+| TC_Login_12    | Verify password recovery page navigation              | LoginPageValidationsTest     | ✅ Automated | Medium   | Navigation – user actions     |
+| TC_Login_13    | Verify successful login flow                          | LoginSuccessfulTest          | ✅ Automated | Medium   | End-to-end positive scenario  |
 
 
