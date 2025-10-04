@@ -41,5 +41,6 @@
 | TC_Login_11    | Verify clicking password toggle changes password type | LoginPageValidationsTest     | ✅ Automated | Medium   | Button functionality check    |
 | TC_Login_12    | Verify password recovery page navigation              | LoginPageValidationsTest     | ✅ Automated | Medium   | Navigation – user actions     |
 | TC_Login_13    | Verify successful login flow                          | LoginSuccessfulTest          | ✅ Automated | Medium   | End-to-end positive scenario  |
+| TC_E2E_01      | Verify End-to-end checkout flow                       | CheckoutE2ETest              | ✅ Automated | High     | End-to-end positive scenario  |
 
 

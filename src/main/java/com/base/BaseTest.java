@@ -1,5 +1,7 @@
 package com.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,7 +16,7 @@ public class BaseTest {
 	public void setUp() {
 		//Initialize the browser driver instance	
 		driver = BrowserFactory.getDriver(ConfigReader.getConfig("browser"));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 	}
 	
