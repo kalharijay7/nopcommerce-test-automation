@@ -40,6 +40,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 │ └── com/tests/home # home page tests
 │ └── com/tests/register # register page tests
 │ └── com/tests/login # login page tests
+│ └── com/tests/e2e/orders # end to end orders tests
 ├── pom.xml # Maven build file
 ├── TEST_CASES.md # Test cases already automated
 └── README.md # Project documentation
