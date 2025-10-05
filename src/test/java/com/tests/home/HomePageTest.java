@@ -42,7 +42,6 @@ public class HomePageTest extends BaseTest{
 
 		WebElement searchBox = driver.findElement(By.id("small-searchterms"));
 		
-		System.out.println("Webelement of the searchbox is" + searchBox);
 		Assert.assertTrue(searchBox.isDisplayed());
 	}
 	

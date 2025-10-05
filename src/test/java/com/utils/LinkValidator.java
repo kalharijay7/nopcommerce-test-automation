@@ -34,7 +34,6 @@ public class LinkValidator {
 			
 			//Skip if the URL is empty
 			String linkUrl = link.getAttribute("href");
-			System.out.println("The link is " + linkUrl);
 			
 			if(linkUrl == null || linkUrl.isEmpty()) {
 				System.out.println("The link is empty " + linkUrl);

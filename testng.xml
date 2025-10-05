@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NopcommerceAutomationSuite" parallel="false">
+
+    <test name="AllTests">
+        <packages>
+            <package name="com.tests.home"/>
+            <package name="com.tests.register"/>
+            <package name="com.tests.login"/>
+            <package name="com.tests.e2e.orders"/>
+        </packages>
+    </test>
+
+</suite>
