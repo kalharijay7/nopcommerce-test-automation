@@ -4,7 +4,7 @@
 	<listeners>
 	    <listener class-name="com.listeners.TestListener"/>
 	</listeners>
-    <test name="AllTests">
+    <test name="NopcommerceTests">
         <packages>
             <package name="com.tests.home"/>
             <package name="com.tests.register"/>
