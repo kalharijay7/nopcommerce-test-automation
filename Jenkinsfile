@@ -34,19 +34,28 @@ pipeline {
             }
         }
 
-        stage('Allure Report') {
-            steps {
-                echo '📊 Generating Allure Report...'
+//        stage('Allure Report') {
+//            steps {
+//                echo '📊 Generating Allure Report...'
+//                allure([
+//                    includeProperties: false,
+//                    jdk: '',
+//                    results: [[path: 'allure-results']]
+//                ])
+//            }
+//        }
+    }
+
+    post {
+		always{
+			echo '📊 Generating Allure Report...'
                 allure([
                     includeProperties: false,
                     jdk: '',
                     results: [[path: 'allure-results']]
                 ])
-            }
-        }
-    }
-
-    post {
+            echo 'Allure Report Generation attempted.'
+		}
         success {
             echo '✅ Build Successful!'
         }
