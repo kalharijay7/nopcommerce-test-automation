@@ -1,8 +1,8 @@
 pipeline {
-    agent any   // Run on any available agent (your local Jenkins node)
+    agent any
 
     tools {
-        maven 'Maven3.9'   // Use the name configured in Jenkins under "Global Tool Configuration"
+        maven 'Maven3.9'
     }
 
     stages {
@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo '⚙️  Running Maven Clean and Compile...'
+                echo '⚙️ Running Maven Clean and Compile...'
                 bat 'mvn clean compile'
             }
         }
@@ -28,9 +28,20 @@ pipeline {
             post {
                 always {
                     echo '📁 Archiving reports and logs...'
-                    junit 'target/surefire-reports/*.xml'   // TestNG XML reports for Jenkins
+                    junit 'target/surefire-reports/*.xml'
                     archiveArtifacts artifacts: 'logs/**, screenshots/**, target/**', fingerprint: true
                 }
+            }
+        }
+
+        stage('Allure Report') {
+            steps {
+                echo '📊 Generating Allure Report...'
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    results: [[path: 'target/allure-results']]
+                ])
             }
         }
     }
