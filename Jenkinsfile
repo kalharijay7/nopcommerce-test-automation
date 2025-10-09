@@ -2,7 +2,7 @@ pipeline {
     agent any   // Run on any available agent (your local Jenkins node)
 
     tools {
-        maven 'Maven3.8.6'   // Use the name configured in Jenkins under "Global Tool Configuration"
+        maven 'Maven3.9'   // Use the name configured in Jenkins under "Global Tool Configuration"
     }
 
     stages {
