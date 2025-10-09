@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo '⚙️ Running Maven Clean and Compile...'
+                echo '⚙️  Running Maven Clean and Compile...'
                 bat 'mvn clean compile'
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 always {
                     echo '📁 Archiving reports and logs...'
                     junit 'target/surefire-reports/*.xml'
-                    archiveArtifacts artifacts: 'logs/**, screenshots/**, target/**', fingerprint: true
+                    archiveArtifacts artifacts: 'logs/**, screenshots/**, allure-results/**', fingerprint: true
                 }
             }
         }
@@ -40,7 +40,7 @@ pipeline {
                 allure([
                     includeProperties: false,
                     jdk: '',
-                    results: [[path: 'target/allure-results']]
+                    results: [[path: 'allure-results']]
                 ])
             }
         }
