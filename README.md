@@ -22,7 +22,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 - **Automation Tool:** Selenium WebDriver  
 - **Testing Framework:** TestNG  
 - **Build Tool:** Maven  
-- **Design Pattern:** Page Object Model (POM), Factory  
+- **Design Pattern:** Factory  
 - **Driver Management:** WebDriverManager  
 - **Logging Framework:** Log4j  
 - **Report Generation:** Allure Reports  
