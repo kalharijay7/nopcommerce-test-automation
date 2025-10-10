@@ -31,7 +31,7 @@ It is a **practice project** designed to demonstrate strong skills in **Java, Se
 ---
 
 ## 🚀 Key Features
-- Clean implementation of **Page Object Model** for maintainable tests  
+- Clean implementation of test scripts with implicit and explicit waits 
 - **Cross-browser testing** support  
 - Structured and configurable **TestNG** test suites  
 - **Log4j** integrated for detailed logging and debugging  
