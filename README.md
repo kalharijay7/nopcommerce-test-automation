@@ -165,6 +165,22 @@ I encountered the following challenges while designing and implementing this aut
 - **Resolution:** I needed to generate the Allure Report even if the tests fail. So I moved the Allure Report step from a standard stage to a post-action block, specifically within the always or failure condition. By placing the allure() command in the post section with the always condition, the report generation will attempt to run whether the preceding test stage passes or fails, ensuring the tab appears on the build page.
 
 ---
+
+## 🧪 Jenkins & Allure Integration Proof
+
+### ✅ Jenkins Build Success
+![Jenkins Build Success](./documentation/jenkins_last_build_page.png)
+
+### 📊 Allure Report Overview
+![Allure Report Overview](./documentation/allure_report_overview.png)
+
+### 📊 Allure Suites View
+![Allure Suites View](./documentation/allure_report_suites.png)
+
+### 📁 Allure Suites CSV File
+![Allure Suites CSV File](./documentation/data_suites.csv)
+
+---
 ## 📈 Future Improvements
 - Implement parallel test execution
 - Enable data-driven testing using Excel/CSV
