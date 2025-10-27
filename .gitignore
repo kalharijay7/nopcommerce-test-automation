@@ -36,3 +36,7 @@ Thumbs.db
 
 # TestNG reports (optional)
 /test-output/
+
+# Allure reports
+/allure-results/
+/allure-report/
