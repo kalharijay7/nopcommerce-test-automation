@@ -178,7 +178,7 @@ I encountered the following challenges while designing and implementing this aut
 ![Allure Suites View](./documentation/allure_report_suites.png)
 
 ### 📁 Allure Suites CSV File
-![Allure Suites CSV File](./documentation/data_suites.csv)
+[View Allure Suites Data (CSV)](./documentation/data_suites.csv)
 
 ---
 ## 📈 Future Improvements
